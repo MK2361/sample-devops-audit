@@ -1,4 +1,6 @@
-[![CodeQL Advanced](https://github.com/MK2361/sample-devops-audit/actions/workflows/codeql.yml/badge.svg)](https://github.com/MK2361/sample-devops-audit/actions/workflows/codeql
+Small PoC repo showing PR‑based SoD + CodeQL SAST on GitHub Actions.
+
+[![CodeQL Advanced](https://github.com/MK2361/sample-devops-audit/actions/workflows/codeql.yml/badge.svg)](https://github.com/MK2361/sample-devops-audit/actions/workflows/codeql.yml)
 
 | 統制 | 実装 |
 |------|------|
