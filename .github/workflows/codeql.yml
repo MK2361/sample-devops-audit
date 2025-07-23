@@ -103,7 +103,10 @@ jobs:
     - name: DEBUG ‑ show analyze outputs
       run: echo "ANALYZE OUTPUTS = ${{ toJson(steps.analyze.outputs) }}"
 
+    - name: DEBUG – list SARIF dir
+      run: ls -R ${{ steps.analyze.outputs['sarif-output'] }}
+
     - name: Upload SARIF to workflow run
       uses: github/codeql-action/upload-sarif@v3
       with:
-        sarif_file: ${{ steps.analyze.outputs.sarif }}
+        sarif_file: ${{ steps.analyze.outputs['sarif-output'] }}/python.sarif
