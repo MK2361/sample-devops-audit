@@ -98,10 +98,10 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
-        upload: false
+        upload: "false"
         
     - name: DEBUG ‑ show analyze outputs
-      run: echo "SARIF = ${{ steps.analyze.outputs.sarif }}"
+      run: echo "ANALYZE OUTPUTS = ${{ toJson(steps.analyze.outputs) }}"
 
     - name: Upload SARIF to workflow run
       uses: github/codeql-action/upload-sarif@v3
