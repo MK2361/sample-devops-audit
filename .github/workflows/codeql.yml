@@ -103,5 +103,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: codeql-sarif-${{ matrix.language }}
-        path: ${{ steps.analyze.outputs.sarif }}
+        path: ${{ steps.analyze.outputs.sarif-output }}
         retention-days: 5              # 保存日数はお好みで
